@@ -1,0 +1,13 @@
+{	
+	"prefix": "multi", 
+	"defaultSessionName": "bot", 
+	"zeksKey": "ahYu2TuRJ1dFCwzKxhWWzmnRbvN",
+	"autoRead": true,
+	"self": false, 
+	"maxLimit": 300,
+	"ownerList": ["917736716373@s.whatsapp.net", "9072716373@s.whatsapp.net"],
+	"apiUrl": "https://api.zeks.me",
+    "imgUrl": "https://api.zeks.me/logo.jpg",
+	"pack": "Lua",
+	"author": "cheia"
+}
