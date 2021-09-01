@@ -19,6 +19,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xxirfanx/luabot/)
 
+
+[![Run on Repl.it](https://repl.it/badge/github/xxirfanx/luabot)](https://repl.it/github/xxirfanx/luabot)
+
 </div>
 
 ### Install ⬇️
