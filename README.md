@@ -1,4 +1,7 @@
-# luabot
+<div align="center">
+<img src="https://images5.alphacoders.com/911/911614.png" alt="luabot" width="500" />
+
+# **LUA BOT SER🎀**
 
 <div align="center">
 <img alt="GitHub" src="https://img.shields.io/badge/WHATSAPP%20BOT-25D32?style=for-the-badge&logoColor=darkgreen"/>
