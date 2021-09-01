@@ -50,7 +50,6 @@ after start it you need to scan the qr
 
 - [TELEGRAM](https://t.me/lua_bro)
 - [WHATSAPP](http://wa.me/917736716373)
-- [GROUP CHAT WHATSAPP](https://chat.whatsapp.com/EV2o7Y4C2XNDT5AAQPZjqt)
 
 
 ## 🙏 Special Thanks to
