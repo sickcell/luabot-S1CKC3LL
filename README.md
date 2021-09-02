@@ -27,7 +27,7 @@
 ### Install ⬇️
 
 ```bash
-> git clone https://github.com/justpiple/whatsapp-bot/
+> git clone https://github.com/xxirfanx/luabot/
 > cd whatsapp-bot
 > npm i
 ```
