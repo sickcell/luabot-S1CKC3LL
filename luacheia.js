@@ -10,7 +10,7 @@ const afkJs = require('./lib/afk')
 const moment = require('moment-timezone');
 const { mess, menu, ingfo, listCode } = require('./lib/text')
 const { color, getBuffer, convertMp3 } = require('./lib/func')
-moment.tz.setDefault('Asia/Jakarta').locale('id');
+moment.tz.setDefault('Asia/Kolkata').locale('id');
 module.exports = handle = (client, Client) => {
     try {
         /*DOWNLOADER*/
