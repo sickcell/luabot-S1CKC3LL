@@ -1335,6 +1335,38 @@ module.exports = handle = (client, Client) => {
                         data.reply(`Sorry song ${data.body} not found`)
                     }
                     break
+case 'song':
+try {
+                if(isLimit(data.sender)) return data.reply(mess.limit)
+                if(data.body == "") return data.reply(`Send orders *${data.prefix}play [ link ]*\nExample : ${data.prefix}song alone`)
+                data.reply(mess.wait)
+                res = await axios.get(`${configs.apiUrl}/api/ytplaymp3/2?apikey=${configs.zeksKey}&q=${data.body}`)
+                if(res.data.status == false) data.reply(res.data.message)
+                ytm = res.data.result
+                teks = `*Data successfully obtained!*\n\n*Title* : ${ytm.title}\n*Size* : ${ytm.size}\n*Quality* : ${ytm.quality}\n*Ext* : ${ytm.ext}\n*Source* : ${ytm.source}\n\n_Please wait for the media file to be sent it may take a few minutes_`
+                if(Number(ytm.size.split(' MB')[0]) >= 50.00) return Client.sendFileFromUrl(data.from, `${ytm.thumb}`, 'thumb.jpg', `*Data successfully obtained!*\n\n*Title* : ${ytm.title}\n*Size* : ${ytm.size}\n*Quality* : ${ytm.quality}\n*Ext* : mp3\n*Source* : ${ytm.source}\n*Link* : ${ytm.link}\n\n_For the duration of more than the limit presented in the form of a link_`, data.message)
+                Client.sendFileFromUrl(data.from, ytm.thumb, 'thumb.jpg', teks, data.message)
+                Client.sendFileFromUrl(data.from, ytm.link, `${ytm.title} - Download.mp3`, ``, data.message)
+            } catch {
+                data.reply('Oops sorry the server is in error or maybe the apikey is invalid')
+            }
+            break
+case 'video':
+	try {
+                if(isLimit(data.sender)) return data.reply(mess.limit)
+                if(data.body == "") return data.reply(`Send orders *${data.prefix}playvid [ query ]*\nExample : ${data.prefix}video amv`)
+                data.reply(mess.wait)
+                res = await axios.get(`${configs.apiUrl}/api/ytplaymp4/2?apikey=${configs.zeksKey}&q=${data.body}`)
+                if(res.data.status == false) data.reply(res.data.message)
+                ytm = res.data.result
+                teks = `*Data successfully obtained!*\n\n*Title* : ${ytm.title}\n*Size* : ${ytm.size}\n*Quality* : ${ytm.quality}\n*Ext* : ${ytm.ext}\n*Source* : ${ytm.source}\n\n_Please wait for the media file to be sent it may take a few minutes_`
+                if(Number(ytm.size.split(' MB')[0]) >= 50.00) return Client.sendFileFromUrl(data.from, `${ytm.thumb}`, 'thumb.jpg', `*Data successfully obtained!*\n\n*Title* : ${ytm.title}\n*Size* : ${ytm.size}\n*Quality* : ${ytm.quality}\n*Ext* : mp4\n*Source* : ${ytm.source}\n*Link* : ${ytm.link}\n\n_For the duration of more than the limit presented in the form of a link_`, data.message)
+                Client.sendFileFromUrl(data.from, `${ytm.thumb}`, 'thumb.jpg', teks, data.message)
+                Client.sendFileFromUrl(data.from, `${ytm.link}`, 'video.mp4', `Video telah terkirim @${data.sender.split('@')[0]}`, data.message)
+            } catch (e) {
+                data.reply('Oops sorry the server is in error or maybe the apikey is invalid')
+            }
+            break
                 case 'gsmarena':
                     try {
                         if(isLimit(data.sender)) return data.reply(mess.limit)
