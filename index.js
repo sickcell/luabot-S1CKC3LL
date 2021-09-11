@@ -25,7 +25,7 @@ global.configs = JSON.parse(fs.readFileSync('./config.json'));
 let dataUser = JSON.parse(fs.readFileSync('./lib/json/dataUser.json'))
 global.vn = JSON.parse(fs.readFileSync('./lib/json/vn.json'))
 global.tebakgambar = {}
-moment.tz.setDefault('Asia/Jakarta').locale('id');
+moment.tz.setDefault('Asia/Kolkata').locale('en');
 const { color } = require('./lib/func')
 const Crypto = require('crypto')
 
