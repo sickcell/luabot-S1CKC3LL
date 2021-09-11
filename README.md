@@ -24,6 +24,19 @@
 
 </div>
 
+# New Feature
+```js
+> Button Location (Top Request)
+> Husbu
+> Neko
+> Hentai
+> Self/Public
+> Asupan
+> Random Image
+> Total Hit
+> Auto Reg User
+```
+
 ### Install ⬇️
 
 ```bash
