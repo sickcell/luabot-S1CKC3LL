@@ -53,8 +53,8 @@ Note : If you want to work, check the column 1,2,3,5,6
 Clone this project
 
 ```bash
-> git clone https://github.com/dvnz99/wabot
-> cd wabot
+> git clone https://github.com/xxirfanx/luabot
+> cd luabot
 ```
 
 Install the dependencies:
