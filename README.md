@@ -52,7 +52,7 @@ Clone this project
 
 ```bash
 > git clone https://github.com/xxirfanx/luabot
-> cd wabot
+> cd luabot
 ```
 
 Install the dependencies:
@@ -94,7 +94,7 @@ after running it you need to scan the qr
 INSTALL
 > pkg i nodejs && ffmpeg && git clone
 > git clone https://github.com/xxirfanx/luabot
-> cd wabot
+> cd luabot
 > npm i
 
 RUN BOT
