@@ -37,8 +37,6 @@
 > Auto Reg User
 ```
 
-### Install ⬇️
-
 # Install For Vps/Rdp/Windows
 
 ### FFMPEG
@@ -54,15 +52,15 @@ Clone this project
 
 ```bash
 > git clone https://github.com/xxirfanx/luabot
-> cd luabot
+> cd wabot
 ```
 
 Install the dependencies:
 
 ```bash
-> npm install
-> npm install -g sharp
-> npm install -g pm2
+> npm i
+> npm i -g sharp
+> npm i -g pm2
 ```
 
 ### Usage
@@ -78,7 +76,6 @@ or
 > pm2 start .
 > pm2 monit
 ```
-
 **2. stop the Whatsapp bot**
 
 for npm :
@@ -92,42 +89,23 @@ for pm2 :
 
 after running it you need to scan the qr
 
-# For termux users before running the above command write this command
-* This repository does not support termux 🙏
-* but you can use heroku or replit
-
-```bash
-> git clone https://github.com/xxirfanx/luabot/
-> cd whatsapp-bot
+# For termux users
+```sh
+INSTALL
+> pkg i nodejs && ffmpeg && git clone
+> git clone https://github.com/xxirfanx/luabot
+> cd wabot
 > npm i
+
+RUN BOT
+> npm start
+or
+> node .
+
+TURN OFF
+> ctrl + c
 ```
-### For termux users before running the above command write this command
-```bash
-> apt-get update
-> apt-get upgrade
-> apt-get install -y nodejs git
-```
 
-* Change `config.json` 
-
-* Register in <b>[zeks.me](https://zeks.me)</b> to get apiKey then enter to zeksKey in `config.json`
-
-* Register in <b>[api.xteam.xyz](https://api.xteam.xyz)</b> to get apiKey then enter to xkey in `config.json`
-
-* Register in <b>[api.lolhuman.xyz](https://api.lolhuman.xyz)</b> to get apiKey then enter to lolkey in `config.json`
-
-* Register in <b>[dapuhy-api](https://dapuhy-api.herokuapp.com)</b> to get apiKey then enter to uhykey in `config.json`
-
-* Start ✅
-
-```bash
-> npm start [session name] [--options]
-```
-`options`
- `port`
---port [port number]
-
-after start it you need to scan the qr
 #### Session name and options is optional
 ### Contact me
 
