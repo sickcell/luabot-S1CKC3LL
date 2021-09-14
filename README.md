@@ -105,6 +105,18 @@ or
 TURN OFF
 > ctrl + c
 ```
+# How To Get Apikey
+* Change [config.json](https://github.com/xxirfanx/luabot/blob/master/config.json)
+
+* Register in <b>[zeks.me](https://zeks.me)</b> to get apiKey then enter to zeksKey in [config.json](https://github.com/xxirfanx/luabot/blob/master/config.json)
+
+* Register in <b>[api.xteam.xyz](https://api.xteam.xyz)</b> to get apiKey then enter to xkey in [config.json](https://github.com/xxirfanx/luabot/blob/master/config.json)
+
+* Register in <b>[api.lolhuman.xyz](https://api.lolhuman.xyz)</b> to get apiKey then enter to lolkey in [config.json](https://github.com/xxirfanx/luabot/blob/master/config.json)
+
+* Register in <b>[dapuhy-api](https://dapuhy-api.herokuapp.com)</b> to get apiKey then enter to uhykey in [config.json](https://github.com/xxirfanx/luabot/blob/master/config.json)
+
+* Start ✅
 
 #### Session name and options is optional
 ### Contact me
